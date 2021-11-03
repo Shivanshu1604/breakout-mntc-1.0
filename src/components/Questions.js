@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { login, logout, selectUser } from '../app/userSlice'
 import db from '../firebase'
 import { ref, update, onValue } from 'firebase/database'
+import { black } from 'kleur'
 
 const Questions = () => {
   const [score, setScore] = useState(0)
@@ -46,7 +47,7 @@ const Questions = () => {
         name="Response"
         value={response}
         onChange={(e) => setResponse(e.target.value)}
-        style="color:black;"
+        style={{ color: black }}
       />
       <button
         onClick={() => {
