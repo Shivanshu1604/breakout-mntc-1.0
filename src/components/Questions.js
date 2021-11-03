@@ -33,6 +33,7 @@ const Questions = () => {
         score: score + 1,
         timeSnapshot: time,
       })
+      setResponse('')
     }
   }
 
@@ -45,6 +46,7 @@ const Questions = () => {
         name="Response"
         value={response}
         onChange={(e) => setResponse(e.target.value)}
+        style="color:black;"
       />
       <button
         onClick={() => {
