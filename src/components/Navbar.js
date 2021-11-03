@@ -15,7 +15,7 @@ function Navbar() {
   const path = window.location.pathname
 
   let logostyles
-  if (path == '/') {
+  if (path === '/') {
     logostyles =
       'container px-2 mx-auto flex text-lg py-1 items-center justify-center'
   } else {
@@ -26,7 +26,7 @@ function Navbar() {
   return (
     <>
       <nav className={logostyles + ' desktop'}>
-        {path != '/' && (
+        {path !== '/' && (
           <Link className="" to="/">
             <h2 className="text-3xl font-bold uppercase tracking-wider nav-logo">
               BreakOut
@@ -72,14 +72,6 @@ function Navbar() {
       </nav>
 
       <nav className="h-14 container px-2 mx-auto flex justify-between text-lg py-1 items-center mobile">
-        {/* {path != '/' && (
-          <Link className="" to="/">
-            <h2 className="text-3xl font-bold uppercase tracking-wider">
-              BreakOut
-            </h2>
-          </Link>
-        )} */}
-
         <a
           className="menu-icon hover:bg-gray-100 hover:bg-opacity-10 p-3 rounded-md"
           onClick={() => setClicked(!clicked)}

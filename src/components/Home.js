@@ -32,9 +32,3 @@ const Home = () => {
 }
 
 export default Home
-{
-  /* <h1 className="font-display">Welcome</h1>
-      <Link to="/questions">
-        <button>Go to Questions</button>
-      </Link> */
-}

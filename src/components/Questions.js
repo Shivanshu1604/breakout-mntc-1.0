@@ -23,7 +23,7 @@ const Questions = () => {
         setAnswer(snapshot.val())
       })
     })
-  }, [score])
+  }, [score, dbref])
 
   const handleSubmit = () => {
     const now = new Date()
