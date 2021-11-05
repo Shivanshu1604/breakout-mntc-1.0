@@ -65,6 +65,7 @@ body {
 .heading {
   text-shadow: 0 0 80px rgba(255, 255, 255, 0.7);
   animation: lightbulb 2s 1s forwards linear;
+  opacity: 0;
 }
 
 @keyframes lightbulb {
