@@ -61,7 +61,7 @@ function Countdown() {
           </p>
         </div>
       </div>
-      Maths N Tech Club | NIT Durg
+
       <div className="absolute bottom-3 text-center w-screen font-mono text-md">
         Maths N Tech Club | NIT Durgapur
       </div>
