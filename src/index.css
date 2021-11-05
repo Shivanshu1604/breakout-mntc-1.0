@@ -7,6 +7,20 @@
   src: url('stuffs/Vampire\ Wars.ttf');
 }
 
+@font-face {
+  font-family: 'SF Mono';
+  font-style: normal;
+  font-weight: normal;
+  src: url('stuffs/SFMonoRegular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SF Mono';
+  font-style: normal;
+  font-weight: bold;
+  src: url('stuffs/SFMonoBold.woff') format('woff');
+}
+
 html,
 body {
   min-height: 100vh;
