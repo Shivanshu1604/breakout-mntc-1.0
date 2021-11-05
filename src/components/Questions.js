@@ -54,7 +54,7 @@ const Questions = () => {
       </div>
 
       <div className="my-16 flex flex-col gap-6 items-start mx-auto max-w-sm">
-        <a className="text-xl font-mono font-bold px-8 py-4 border border-white border-opacity-50 signInBtn">
+        <a className="text-lg font-mono font-bold px-8 py-4 border border-white border-opacity-50">
           Get Your Question
         </a>
         <input
@@ -65,30 +65,17 @@ const Questions = () => {
           onChange={(e) => setResponse(e.target.value)}
           className="bg-transparent border-0 border-b ring-0 w-sm font-mono placeholder-white placeholder-opacity-70 focus:ring-0 focus:border-terminalgreen "
         />
+        <button
+          className="text-lg font-mono font-bold px-7 py-3 bg-white text-black"
+          onClick={() => {
+            handleSubmit()
+          }}
+        >
+          Submit
+        </button>
       </div>
     </div>
   )
 }
 
 export default Questions
-
-{
-  /* <h1>
-      Answer : {answer}
-      Score : {score}
-      <input
-        type="text"
-        name="Response"
-        value={response}
-        onChange={(e) => setResponse(e.target.value)}
-        style={{ color: black }}
-      />
-      <button
-        onClick={() => {
-          handleSubmit()
-        }}
-      >
-        Submit
-      </button>
-    </h1> */
-}
