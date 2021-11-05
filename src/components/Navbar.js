@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Router } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { selectUser } from '../app/userSlice'
 import { X, Menu } from 'react-feather'
@@ -17,18 +17,18 @@ function Navbar() {
   let logostyles
   if (path === '/') {
     logostyles =
-      'container px-2 mx-auto flex text-lg py-1 items-center justify-center'
+      'container px-2 mx-auto flex text-lg py-1 items-center justify-center z-10'
   } else {
     logostyles =
-      'container px-2 mx-auto flex text-lg py-1 items-center justify-between'
+      'container px-2 mx-auto flex text-lg py-1 items-center justify-between z-10'
   }
 
   return (
     <>
       <nav className={logostyles + ' desktop'}>
-        {path !== '/' && (
-          <Link className="" to="/">
-            <h2 className="text-3xl font-bold uppercase tracking-wider nav-logo">
+        {path != '/' && (
+          <Link to="/">
+            <h2 className="text-3xl font-display uppercase tracking-widest nav-logo">
               BreakOut
             </h2>
           </Link>
@@ -37,7 +37,7 @@ function Navbar() {
         <ul className="flex gap-8 items-center font-mono">
           {user && now > countdownDate && (
             <Link
-              className="hover:bg-gray-100 hover:bg-opacity-10 p-3 rounded-md"
+              className="hover:bg-gray-100 hover:bg-opacity-10 p-3 rounded-md "
               to="/questions"
             >
               Questions
@@ -109,6 +109,7 @@ function Navbar() {
             className=" p-3 rounded-md"
             onClick={() => {
               auth.signOut()
+              window.location.assign('/')
             }}
           >
             SignOut

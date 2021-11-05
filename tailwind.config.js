@@ -1,6 +1,6 @@
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false,
   theme: {
     extend: {},
   },
@@ -10,11 +10,14 @@ module.exports = {
   theme: {
     colors: {
       terminalgreen: '#39ff14',
+      white: '#FFF',
+      black: '#000',
+      transparent: 'transparent',
     },
     fontFamily: {
       mono: ['SF Mono', 'mono'],
       display: ['Vampire Wars', 'display'],
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 }

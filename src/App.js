@@ -11,6 +11,7 @@ import Questions from './components/Questions'
 import NoiseBG from './components/NoiseBG'
 import Navbar from './components/Navbar'
 import Leaderboard from './components/Leaderboard'
+import Rules from './components/Rules'
 
 function App() {
   const user = useSelector(selectUser)
@@ -51,33 +52,43 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <NoiseBG />
-      {user ? (
-        <Router>
+      <Router>
+        <Navbar />
+        <NoiseBG />
+        {user ? (
           <Switch>
             <Route path="/" exact>
               <Home />
             </Route>
+
             <Route path="/questions" exact>
               <Questions />
             </Route>
+
             <Route path="/leaderboard" exact>
               <Leaderboard />
             </Route>
-          </Switch>
-        </Router>
-      ) : (
-        <Router>
-          <Route path="/" exact>
-            <Login />
-          </Route>
 
-          {/* <Route path="/leaderboard" exact>
-            <Leaderboard />
-          </Route> */}
-        </Router>
-      )}
+            <Route path="/rules" exact>
+              <Rules />
+            </Route>
+          </Switch>
+        ) : (
+          <Switch>
+            <Route path="/" exact>
+              <Login />
+            </Route>
+
+            <Route path="/leaderboard" exact>
+              <Leaderboard />
+            </Route>
+
+            <Route path="/rules" exact>
+              <Rules />
+            </Route>
+          </Switch>
+        )}
+      </Router>
     </>
   )
 }
