@@ -13,6 +13,7 @@ import Navbar from './components/Navbar'
 import Leaderboard from './components/Leaderboard'
 import Rules from './components/Rules'
 import Countdown from './components/Countdown'
+import QuestionsOver from './components/QuestionsOver'
 
 function App() {
   const user = useSelector(selectUser)
@@ -42,6 +43,7 @@ function App() {
               name: authUser.displayName,
               email: authUser.email,
               score: 0,
+              questionNo: 1,
               timeSnapshot: time,
             })
           }
@@ -52,7 +54,7 @@ function App() {
     })
   }, [dispatch])
 
-  const countdownDate = new Date('Nov 10, 2021 18:00:00 GMT+0530').getTime()
+  const countdownDate = new Date('Nov 7, 2021 18:00:00 GMT+0530').getTime()
   const now = new Date().getTime()
 
   return (
@@ -82,6 +84,10 @@ function App() {
 
               <Route path="/rules" exact>
                 <Rules />
+              </Route>
+
+              <Route path="/over" exact>
+                <QuestionsOver />
               </Route>
             </Switch>
           ) : (

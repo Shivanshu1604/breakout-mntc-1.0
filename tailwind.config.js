@@ -13,6 +13,7 @@ module.exports = {
       white: '#FFF',
       black: '#000',
       transparent: 'transparent',
+      red: '#F00',
     },
     fontFamily: {
       mono: ['SF Mono', 'mono'],

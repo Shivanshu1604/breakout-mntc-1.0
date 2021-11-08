@@ -60,7 +60,7 @@ function Navbar() {
 
           {user && (
             <a
-              className="hover:bg-gray-100 hover:bg-opacity-10 p-3 rounded-md"
+              className="hover:bg-gray-100 hover:bg-opacity-10 p-3 rounded-md cursor-pointer"
               onClick={() => {
                 auth.signOut()
               }}
