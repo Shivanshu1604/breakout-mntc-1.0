@@ -8,7 +8,7 @@ function Countdown() {
 
   let interval = useRef()
   const startTimer = () => {
-    const countdownDate = new Date('Nov 10, 2021 18:00:00 GMT+0530').getTime()
+    const countdownDate = new Date('Nov 10, 2021 19:00:00 GMT+0530').getTime()
 
     interval = setInterval(() => {
       const now = new Date().getTime()
