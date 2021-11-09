@@ -52,13 +52,37 @@ function Countdown() {
 
         <h3 className="font-mono mt-10 text-lg hero">Coming Soon</h3>
 
-        <div>
-          <h2 className="font-mono text-9xl text-terminalgreen hero">
-            {timerDays}
+        <div className="flex gap-2 mt-4">
+          <div className="flex flex-col items-center">
+            <h2 className="font-mono text-6xl lg:text-8xl text-terminalgreen hero">
+              {timerHours}
+            </h2>
+            <p className="text-center font-mono text-xl text-terminalgreen font-bold hero">
+              hours
+            </p>
+          </div>
+          <h2 className="font-mono text-6xl lg:text-8xl text-terminalgreen hero">
+            :
           </h2>
-          <p className="text-center font-mono text-xl text-terminalgreen font-bold hero">
-            Days
-          </p>
+          <div className="flex flex-col items-center">
+            <h2 className="font-mono text-6xl lg:text-8xl text-terminalgreen hero">
+              {timerMins}
+            </h2>
+            <p className="text-center font-mono text-xl text-terminalgreen font-bold hero">
+              mins
+            </p>
+          </div>
+          <h2 className="font-mono text-6xl lg:text-8xl text-terminalgreen hero">
+            :
+          </h2>
+          <div className="flex flex-col items-center">
+            <h2 className="font-mono text-6xl lg:text-8xl text-terminalgreen hero">
+              {timerSecs}
+            </h2>
+            <p className="text-center font-mono text-xl text-terminalgreen font-bold hero">
+              secs
+            </p>
+          </div>
         </div>
       </div>
 

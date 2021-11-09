@@ -2,7 +2,7 @@ import React from 'react'
 
 function Rules() {
   return (
-    <div className="container mx-auto px-2 py-10">
+    <div className="container mx-auto px-2 py-10 min-h-full">
       <h1 className="text-4xl md:text-6xl font-display tracking-widest">
         Rules
       </h1>
@@ -10,6 +10,11 @@ function Rules() {
         <li>
           After you get into a room you will be provided with a link to download
           the question pdf file (one file for each room)
+        </li>
+
+        <li>
+          All questions are sorted according to the increasing level of
+          difficulty.
         </li>
 
         <li>Read the questions from the file and solve one question</li>
@@ -20,8 +25,8 @@ function Rules() {
         </li>
 
         <li>
-          The tough question carries 3 points, the medium carries 2 and the easy
-          carries 1 point
+          The tough question carries 30 points, the medium carries 20 and the
+          easy carries 10 points
         </li>
 
         <li>
@@ -31,6 +36,8 @@ function Rules() {
         </li>
 
         <li>Fill the correct answer and advance to the next room</li>
+
+        <li>May the best win! Follow the leaderboard and MNTC socials</li>
       </ul>
     </div>
   )

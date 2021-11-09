@@ -40,21 +40,21 @@ const Questions = () => {
 
     if (response.toLowerCase() == answerE) {
       update(dbref, {
-        score: score + 1,
+        score: score + 10,
         questionNo: question + 1,
         timeSnapshot: time,
       })
       setResponse('')
     } else if (response.toLowerCase() == answerM) {
       update(dbref, {
-        score: score + 2,
+        score: score + 20,
         questionNo: question + 1,
         timeSnapshot: time,
       })
       setResponse('')
     } else if (response.toLowerCase() == answerT) {
       update(dbref, {
-        score: score + 3,
+        score: score + 30,
         questionNo: question + 1,
         timeSnapshot: time,
       })
@@ -65,7 +65,7 @@ const Questions = () => {
   }
 
   return (
-    <div className="container mx-auto px-2 py-10">
+    <div className="container mx-auto px-2 py-10 min-h-full">
       <h1 className="text-4xl md:text-6xl mb-8 font-display tracking-widest">
         Room #{question}
       </h1>
@@ -86,6 +86,9 @@ const Questions = () => {
         >
           Get Your Question as PDF
         </a>
+        <p className="font-mono">
+          *Questions are arranged in increasing order of difficulty*
+        </p>
         <input
           type="text"
           name="Response"

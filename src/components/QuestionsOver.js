@@ -3,10 +3,9 @@ import { Link } from 'react-router-dom'
 
 function QuestionsOver() {
   return (
-    <div className="container mx-auto px-2 py-10 h-5/6 grid place-items-center gap-1">
+    <div className="container mx-auto px-2 py-10 h-5/6 grid place-items-center gap-1 min-h-full">
       <h1 className="font-display sm:text-6xl text-4xl  text-center tracking-wider max-w-3xl leading-relaxed">
-        No magic could stop your wits. Congratulations on making it through all
-        the rounds.
+        Bask in the glory of your victory. You have finally broken out!
       </h1>
       <Link
         to="leaderboard"
