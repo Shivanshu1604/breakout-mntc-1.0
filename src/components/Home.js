@@ -8,10 +8,9 @@ const HomeOpen = () => {
           BreakOut 1.0
         </h1>
         <p className="max-w-sm md:max-w-xl sm:text-lg  text-sm text-center font-mono text-terminalgreen">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Synchronicity has taken place. It's your only chance to break free.
+          But remember, only one can make it through. Gear up for this escape
+          room event with a subtle twist.
         </p>
         <Link to="/questions">
           <button className="text-xl font-mono font-bold px-8 py-4 border border-white border-opacity-50 signInBtn">

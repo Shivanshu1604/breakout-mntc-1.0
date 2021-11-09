@@ -9,7 +9,7 @@ function Navbar() {
   const [clicked, setClicked] = useState(false)
   const user = useSelector(selectUser)
 
-  const countdownDate = new Date('Nov 1, 2021 18:00:00 GMT+0530').getTime()
+  const countdownDate = new Date('Nov 10, 2021 19:00:00 GMT+0530').getTime()
   const now = new Date().getTime()
   const distance = countdownDate - now
   const path = window.location.pathname
@@ -60,7 +60,7 @@ function Navbar() {
 
           {user && (
             <a
-              className="hover:bg-gray-100 hover:bg-opacity-10 p-3 rounded-md"
+              className="hover:bg-gray-100 hover:bg-opacity-10 p-3 rounded-md cursor-pointer"
               onClick={() => {
                 auth.signOut()
               }}
@@ -90,6 +90,10 @@ function Navbar() {
         className="absolute bg-black text-white bg-opacity-40 left-0 right-0 top-14 flex flex-col gap-6 text-2xl py-6 font-mono backdrop-filter backdrop-blur-md z-10 rounded-md"
         onClick={() => setClicked(!clicked)}
       >
+        <Link className=" p-3 rounded-md" to="/">
+          Home
+        </Link>
+
         {user && now > countdownDate && (
           <Link className="p-3 rounded-md" to="/questions">
             Questions
