@@ -5,7 +5,7 @@ const HomeOpen = () => {
     <>
       <div className="container mx-auto h-5/6 flex flex-col justify-center items-center gap-8 px-2">
         <h1 className="font-display sm:text-9xl text-6xl  text-center tracking-wider heading">
-          BreakOut 1.0
+          BreakOut 2.0
         </h1>
         <p className="max-w-sm md:max-w-xl sm:text-lg  text-sm text-center font-mono text-terminalgreen">
           Synchronicity has taken place. It's your only chance to break free.
