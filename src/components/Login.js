@@ -12,9 +12,8 @@ const Login = () => {
         BreakOut 2.0
       </h1>
       <p className="max-w-sm md:max-w-xl sm:text-lg text-sm text-center font-mono text-terminalgreen hero">
-        Synchronicity has taken place. It's your only chance to break free. But
-        remember, only one can make it through. Gear up for this escape room
-        event with a subtle twist.
+      Ensnared in the rooms, it's your only chance to breakout. 
+      Get ready to escape the enigmatic rooms where only your wit will lead you to victory.
       </p>
       <button
         onClick={signIn}

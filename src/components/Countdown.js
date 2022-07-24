@@ -47,7 +47,7 @@ function Countdown() {
     <>
       <div className="container mx-auto px-2 py-10 h-full flex flex-col items-center justify-center">
         <h1 className="font-display sm:text-9xl text-6xl text-center tracking-wider heading">
-          BreakOut 1.0
+          BreakOut 2.0
         </h1>
 
         <h3 className="font-mono mt-10 text-lg hero">Coming Soon</h3>
